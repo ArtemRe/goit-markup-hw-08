@@ -1,0 +1,78 @@
+.header-border {
+    border-bottom: 1px solid #ececec;
+}
+.header-container {
+    display: flex;
+    align-items: center;
+}
+.span {
+    color: $main-blue;
+}
+.nav-header {
+    display: flex;
+}
+.nav-header :not(:last-child) {
+    margin-right: 50px;
+}
+.nav-header .link {
+    transition: color $speed-animation;
+}
+.nav__items a {
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+
+.nav__items :hover,
+.nav__items :focus{
+    color: $main-blue;  
+}
+.contakts {
+    display: flex;
+    margin-left: auto;
+  
+ & a{
+color: $paragraf-colore;
+font-weight: 500;
+letter-spacing: 0.02em;
+font-size: 14px;
+line-height: 1.14;
+    }
+}
+.contakts :hover,
+.contakts :focus{
+    color: $main-blue;
+    fill: $main-blue;
+}
+.contakts__mail:not(:last-child) {
+    margin-right: 50px;
+}
+.contakts__mail a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+}
+.contacts__link.link {
+    transition: color $speed-animation;
+}
+.contakt__icon {
+    width: 16px;
+    height: 17px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+.logo {
+    color: $tittle-colore;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-size: 26px;
+    margin-right: 93px;
+}
+.span {
+    color: $main-blue;
+}

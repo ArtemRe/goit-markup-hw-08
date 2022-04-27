@@ -1,0 +1,85 @@
+.section-team {
+    text-align: center;
+    background-color: $section-colore;
+    padding-bottom: 94px;
+}
+.team__container {
+    display: flex;
+    justify-content: center;
+}
+.team__inner:nth-last-child(-n + 1) {
+    margin-right: 0;
+}
+.team__inner:last-child {
+    margin-right: 0;
+}
+.team__inner {
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &--card-color {
+        background-color: $main-bacgraund;
+    }
+}
+.card-text {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.card__inner {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.12;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.card__paragraf {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+}
+.box-social {
+    display: flex;
+    margin-top: 16px;
+    justify-content: center;
+    align-items: center;
+}
+.social__icons:not(:last-child){
+        margin-right: 10px;
+}
+
+.social__icons{
+
+}
+.social__icon {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color $speed-animation;
+    border-radius: 50%;
+}
+.social__item {
+    width: 20px;
+    height: 20px;
+    fill: $icon-color;
+    transition: fill $speed-animation;
+}
+.social__icons :focus,
+.social__icons :hover {
+    background-color: $main-blue;
+}
+
+.social__icons:not(:last-child) {
+    margin-right: 10px;
+}
+
+.social__icons :hover .social__item {
+    fill: $main-bacgraund;
+}
+
+.social__icons :focus .social__item {
+    fill: $main-bacgraund;
+}
