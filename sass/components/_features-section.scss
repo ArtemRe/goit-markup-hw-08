@@ -5,7 +5,7 @@
     width: 1170px;
 }
 .features__title {
-    margin-right: 30px;
+    
     width: 270px;
 }
 .features__title:last-child {
@@ -42,9 +42,11 @@
 }}
 // mobile
 @media screen and (min-width: 320px) and (max-width: 767px) {
-.features-section{
+
+    .features-section{
     width: 100vw;
     height: 100vh;
+    
 }
     .features__inner {
     display: block;
@@ -54,7 +56,7 @@
 }
 
 .features__title {
-    margin-right: 30px;
+   
     width: 100%;
 }
 
@@ -97,5 +99,8 @@
 }
 br{
     display: none;
+}
+.features__text {
+    margin-bottom: 30px;
 }
 }
