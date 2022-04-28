@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Document</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,8 +18,15 @@
 <body>
     <header class="header header-border">
         <div class="container header-container">
-            <nav class="header-container"> <a href="./index.html" class="logo link">
+            <nav class="header-container"> 
+                <a href="./index.html" class="logo link">
                     <span class="span"> Web</span>Studio</a>
+                    <button type="button" class="mobile-button" data-menu-button aria-expanded="false">
+                        <svg class="menu">
+                            <use href="./images/symbol-defss.svg#icon-menu" class="menu-open"></use>
+                            <use href="./images/symbol-defss.svg#icon-close_menu" class="menu-cloze"></use>    
+                        </svg>
+                    </button>
 
                 <ul class="nav-header">
                     <li class="nav__items"><a href="./index.html" class="current link">Студия</a> </li>
@@ -424,8 +431,29 @@
            
         </div>
     </div>
+    <div class="modal-menu" data-menu>
+<ul class="modal-nav">
+    <li class="modal-nav__item"> <a class="modal-nav__link" href="">Студия</a></li>
+    <li class="modal-nav__item"> <a class="modal-nav__link" href="">Портфолио</a></li>
+    <li class="modal-nav__item"> <a class="modal-nav__link" href="">Контакты</a></li> 
+</ul>
+<div class="mob-blok">
+    <ul class="modal-adres">
+        <li class="modal-adres__item"><a class="modal-adres__link" href="tel:+380991111111">+38 096 111 11 11</a></li>
+        <li class="modal-adres__item"><a class="modal-adres__links" href="mailto:info@example.com">info@devstudio.com</a>
+        </li>
+    </ul>
+    <ul class="modal-social">
+        <li class="modal-social__item c"><a class="modal-social__link" href="">Instagram</a></li>
+        <li class="modal-social__item c"><a class="modal-social__link" href="">Twitter</a></li>
+        <li class="modal-social__item c"><a class="modal-social__link" href="">Facebook</a></li>
+        <li class="modal-social__item c"><a class="modal-social__link" href="">LinkedIn</a></li>
+    </ul>
+</div>
+    </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
