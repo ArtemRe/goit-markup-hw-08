@@ -34,12 +34,13 @@
     color: $main-bacgraund;
 }
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 1200px) {
     .section-work {
+        display: none;
+        
     padding-top: 94px;
     padding-bottom: 94px;
-    display: none;
-}
+    }
 
 .section-pictures {
     display: flex;

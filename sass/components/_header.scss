@@ -3,95 +3,99 @@
     display: none;
 }
 }
-.header-border {   
-    @media (min-width: 1200px) {
-    border-bottom: 1px solid #ececec;
-    }
-}
-.header-container {   
-    @media (min-width: 1200px) {
-        display: flex;
-    align-items: center;}
-}
-.span {
-    color: $main-blue;
-}
-.nav-header {
-    @media (min-width: 1200px){
-        display: flex;}
+// .header-border {   
+//     @media (min-width: 1200px) {
+//     border-bottom: 1px solid #ececec;
+//     }
+// }
+// .header-container {   
+//     @media (min-width: 1200px) {
+//         display: flex;
+//     align-items: center;}
+// }
+// .span {
+//     color: $main-blue;
+// }
+// .nav-header {
+//     @media (min-width: 1200px){
+//         display: flex;}
     
-}
-.nav-header :not(:last-child) {
-    margin-right: 50px;
-}
-.nav-header .link {
-    transition: color $speed-animation;
-}
-.nav__items a {   
-    font-weight: 500;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: block;
-}
+// }
+// .nav-header :not(:last-child) {
+//     margin-right: 50px;
+// }
+// .nav-header .link {
+//     transition: color $speed-animation;
+// }
+// .nav__items a {   
+//     font-weight: 500;
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     display: block;
+// }
 
-.nav__items :hover,
-.nav__items :focus{
-    color: $main-blue;  
-}
-.contakts {
+// .nav__items :hover,
+// .nav__items :focus{
+//     color: $main-blue;  
+// }
+// .contakts {
     
-@media (min-width: 1200px){
-    display: flex;
-    margin-left: auto;}
- & a{
-color: $paragraf-colore;
-font-weight: 500;
-letter-spacing: 0.02em;
-font-size: 14px;
-line-height: 1.14;
-    }
-}
-.contakts :hover,
-.contakts :focus{
-    color: $main-blue;
-    fill: $main-blue;
-}
-.contakts__mail:not(:last-child) {
-    margin-right: 50px;
-}
-.contakts__mail a {
-    @media (min-width: 1200px){
-    padding-top: 32px;
-    padding-bottom: 32px;
-    display: flex;}
+// @media (min-width: 1200px){
+//     display: flex;
+//     margin-left: auto;}
+//  & a{
+// color: $paragraf-colore;
+// font-weight: 500;
+// letter-spacing: 0.02em;
+// font-size: 14px;
+// line-height: 1.14;
+//     }
+// }
+// .contakts :hover,
+// .contakts :focus{
+//     color: $main-blue;
+//     fill: $main-blue;
+// }
+// .contakts__mail:not(:last-child) {
+//     margin-right: 50px;
+// }
+// .contakts__mail a {
+//     @media (min-width: 1200px){
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//     display: flex;}
     
-}
-.contacts__link.link {
-    transition: color $speed-animation;
-}
-.contakt__icon {
-    width: 16px;
-    height: 17px;
-    fill: currentColor;
-    margin-right: 10px;
-}
-.logo {
-    color: $tittle-colore;
-    font-family: raleway;
-    font-weight: bold;
-    font-size: 26px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    font-weight: bold;
-    font-size: 26px;
-    margin-right: 93px;
-}
-.span {
-    color: $main-blue;
-}
+// }
+// .contacts__link.link {
+//     transition: color $speed-animation;
+// }
+// .contakt__icon {
+//     width: 16px;
+//     height: 17px;
+//     fill: currentColor;
+//     margin-right: 10px;
+// }
+// .logo {
+//     color: $tittle-colore;
+//     font-family: raleway;
+//     font-weight: bold;
+//     font-size: 26px;
+//     line-height: 1.2;
+//     letter-spacing: 0.03em;
+//     font-weight: bold;
+//     font-size: 26px;
+//     margin-right: 93px;
+// }
+// .span {
+//     color: $main-blue;
+// }
 // mobile 
-
-@media screen and (min-width: 320px) and (max-width: 767px){
+.container {
+    max-width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
 a{
     text-decoration: none;
 }
@@ -130,6 +134,7 @@ opacity: 0;
     display: none;
 }
 .header-container {
+width: 100%;
 display: flex;
 align-items: center;
 }
@@ -139,7 +144,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    // margin-left: auto;
+    margin-left: auto;
     border: none;
     cursor: pointer;
     z-index: 10;
@@ -148,7 +153,9 @@ align-items: center;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.2;
-    margin-right: auto;
+    // margin-right: auto;
+    // margin-left: 15px;
+    margin: 0;
 }
 .modal-menu{
     position: fixed;
@@ -234,4 +241,205 @@ color: #2196F3;
 .mob-blok{
     margin-top: auto;
 }
+
+@media screen and(min-width: 768px) {
+.container {
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto
 }
+.mobile-button {
+    display: none;
+}
+
+.header-border {
+    border-bottom: 1px solid #ececec;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-right: auto;
+}
+
+.nav-header {
+    display: flex;
+    margin-right: 84px;
+}
+
+.nav-header :not(:last-child) {
+    margin-right: 50px;
+}
+
+.nav-header .link {
+    transition: color $speed-animation;
+}
+
+.nav__items a {
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+
+.nav__items :hover,
+.nav__items :focus {
+    color: $main-blue;
+}
+
+.contakts {
+   padding-top: 21px;
+   padding-bottom: 21px;
+    display: block;
+    margin-left: auto;
+}
+
+& a {
+    color: $paragraf-colore;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    line-height: 1.14;
+}
+}
+
+.contakts :hover,
+.contakts :focus {
+    color: $main-blue;
+    fill: $main-blue;
+}
+
+// .contakts__mail:not(:last-child) {
+//     margin-right: 50px;
+// }
+
+.contakts__mail a {
+
+    display: inline-block;
+}
+.contakts__mail {
+padding: 0;
+}
+.contacts__link.link {
+    transition: color $speed-animation;
+}
+
+.contakt__icon {
+    width: 16px;
+    height: 17px;
+    fill: currentColor;
+    margin-right: 10px;
+}
+
+.logo {
+    color: $tittle-colore;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-size: 26px;
+    margin-right: 88px;
+    
+}
+
+.span {
+    color: $main-blue;
+}
+
+
+
+
+
+
+@media screen and(min-width: 1200px) {
+.header-border {
+    border-bottom: 1px solid #ececec;
+    }
+.header-container {
+        display: flex;
+        align-items: center;
+        }
+.nav-header {
+display: flex;
+}
+.nav-header :not(:last-child) {
+    margin-right: 50px;
+}
+.nav-header .link {
+    transition: color $speed-animation;
+}
+
+.nav__items a {
+    font-weight: 500;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: block;
+}
+
+.nav__items :hover,
+.nav__items :focus {
+    color: $main-blue;
+}
+.contakts {
+    display: flex;
+    margin-left: auto;
+    }
+    
+    & a {
+        color: $paragraf-colore;
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+    }
+    
+    .contakts :hover,
+    .contakts :focus {
+        color: $main-blue;
+        fill: $main-blue;
+    }
+    
+    .contakts__mail:not(:last-child) {
+        margin-right: 50px;
+    }
+    .contakts__mail a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    @media screen and(min-width: 768px) {
+    padding-top: 5px;
+    padding-bottom:  5px;
+    }
+    }
+    .contacts__link.link {
+        transition: color $speed-animation;
+    }
+    
+    .contakt__icon {
+        width: 16px;
+        height: 17px;
+        fill: currentColor;
+        margin-right: 10px;
+    }
+    
+    .logo {
+        color: $tittle-colore;
+        font-family: raleway;
+        font-weight: bold;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        font-weight: bold;
+        font-size: 26px;
+        margin-right: 93px;
+    }
+    
+    .span {
+        color: $main-blue;
+    }
+
