@@ -69,25 +69,6 @@ a {
   margin-bottom: 50px;
 }
 
-.container {
-  width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
 @media (min-width: 767px) {
   .mobile-button {
     display: none;
@@ -95,7 +76,7 @@ a {
 }
 
 .container {
-  width: 480px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -106,7 +87,7 @@ a {
 }
 
 .header-container {
-  width: 100%;
+  min-width: 480px;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -304,7 +285,6 @@ a {
         -ms-flex-align: center;
             align-items: center;
     padding: 0;
-    margin-right: auto;
   }
   .nav-header {
     display: -webkit-box;
@@ -341,69 +321,71 @@ a {
     font-size: 14px;
     line-height: 1.14;
   }
-}
-
-.contakts :hover,
-.contakts :focus {
-  color: #2196f3;
-  fill: #2196f3;
-}
-
-.contakts__mail a {
-  display: inline-block;
-}
-
-.contakts__mail {
-  padding: 0;
-}
-
-.contacts__link.link {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contakt__icon {
-  width: 16px;
-  height: 17px;
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.logo {
-  color: #212121;
-  font-family: raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  font-weight: bold;
-  font-size: 26px;
-  margin-right: 88px;
-}
-
-.span {
-  color: #2196f3;
+  .contakts :hover,
+  .contakts :focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+  .contakts__mail a {
+    display: inline-block;
+  }
+  .contakts__mail {
+    padding: 0;
+  }
+  .contacts__link.link {
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contakt__icon {
+    width: 16px;
+    height: 17px;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .logo {
+    color: #212121;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-size: 26px;
+    margin-right: 88px;
+  }
+  .span {
+    color: #2196f3;
+  }
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 1600px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+  }
   .header-border {
     border-bottom: 1px solid #ececec;
   }
-  .header-container {
+  .header-containerr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    min-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .span {
+    color: #2196f3;
   }
   .nav-header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .nav-header :not(:last-child) {
-    margin-right: 50px;
   }
   .nav-header .link {
     -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -425,70 +407,56 @@ a {
     display: flex;
     margin-left: auto;
   }
-  a {
+  .contakts a {
     color: #757575;
     font-weight: 500;
     letter-spacing: 0.02em;
     font-size: 14px;
     line-height: 1.14;
   }
-}
-
-.contakts :hover,
-.contakts :focus {
-  color: #2196f3;
-  fill: #2196f3;
-}
-
-.contakts__mail:not(:last-child) {
-  margin-right: 50px;
-}
-
-.contakts__mail a {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-@media screen and (min-width: 768px) {
+  .contakts :hover,
+  .contakts :focus {
+    color: #2196f3;
+    fill: #2196f3;
+  }
+  .contakts__mail:not(:last-child) {
+    margin-right: 50px;
+  }
   .contakts__mail a {
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacts__link.link {
+    -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contakt__icon {
+    width: 16px;
+    height: 17px;
+    fill: currentColor;
+    margin-right: 10px;
+  }
+  .logo {
+    color: #212121;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    font-size: 26px;
+    margin-right: 93px;
+  }
+  .span {
+    color: #2196f3;
   }
 }
 
-.contacts__link.link {
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.contakt__icon {
-  width: 16px;
-  height: 17px;
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.logo {
-  color: #212121;
-  font-family: raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  font-weight: bold;
-  font-size: 26px;
-  margin-right: 93px;
-}
-
-.span {
-  color: #2196f3;
-}
-
 .container {
-  width: 480px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -501,7 +469,7 @@ a {
   padding-bottom: 200px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  min-width: 100%;
+  min-width: 480px;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -642,14 +610,14 @@ a {
 }
 
 .container {
-  width: 480px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
 
 .features-section {
-  width: 100%;
+  min-width: 480px;
 }
 
 .features__inner {
@@ -791,17 +759,20 @@ br {
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .features__inner {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 1170px;
   }
   .features__title {
+    margin-right: 30px;
     width: 270px;
   }
   .features__title:last-child {
@@ -939,7 +910,7 @@ br {
 }
 
 .container {
-  width: 480px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -949,6 +920,7 @@ br {
   text-align: center;
   background-color: #f5f4fa;
   padding-bottom: 60px;
+  width: 100%;
 }
 
 .team__container {
@@ -956,6 +928,7 @@ br {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  min-width: 480px;
 }
 
 .team__inner:nth-last-child(-n + 1) {
@@ -1276,7 +1249,7 @@ img {
 }
 
 .container {
-  width: 480px;
+  min-width: 320px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -1542,15 +1515,8 @@ img {
   }
 }
 
-.container {
-  width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-
 .footer-container {
-  width: 100%;
+  min-width: 320px;
   display: block;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1561,6 +1527,10 @@ img {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
+  min-width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
 .link {
@@ -1734,7 +1704,7 @@ img {
 }
 
 .footer__input {
-  min-width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -2167,12 +2137,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
   .footer-container {
     width: 100%;
     display: block;
@@ -2184,6 +2148,10 @@ img {
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+    max-width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
   }
   .footer-flex {
     display: -webkit-box;
@@ -2751,6 +2719,7 @@ img {
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
+    min-width: 1600px;
   }
   .link {
     text-decoration: none;

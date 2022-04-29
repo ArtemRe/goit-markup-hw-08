@@ -1,19 +1,21 @@
 
 // mobile
 .container {
-    width: 480px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;}
 .section-team {
     text-align: center;
-    background-color: $section-colore;
+    background-color: $section-colore ;
     padding-bottom: 60px;
+    width: 100%;
 }
 
 .team__container {
     display: block;
     justify-content: center;
+    min-width: 480px;
 }
 
 .team__inner:nth-last-child(-n + 1) {
