@@ -1,5 +1,5 @@
 .container {
-    max-width: 480px;
+    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;}
@@ -10,7 +10,7 @@
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero.jpg);
-    max-width: 100%;
+    min-width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
@@ -51,18 +51,19 @@
 // mobile
 @media screen and(mim-width: 768px) {
 .container {
-    max-width: 768px;
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;}
     .hero-section {
+    width: 100%;
     background-color: $footer-black;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/hero.jpg);
-    max-width: 100%;
+    
     margin-left: auto;
     margin-right: auto;
     background-size: cover;

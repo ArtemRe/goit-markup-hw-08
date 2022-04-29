@@ -70,7 +70,7 @@ a {
 }
 
 .container {
-  max-width: 480px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -95,7 +95,7 @@ a {
 }
 
 .container {
-  max-width: 480px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -285,7 +285,7 @@ a {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -333,7 +333,6 @@ a {
     padding-top: 21px;
     padding-bottom: 21px;
     display: block;
-    margin-left: auto;
   }
   a {
     color: #757575;
@@ -489,7 +488,7 @@ a {
 }
 
 .container {
-  max-width: 480px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -502,7 +501,7 @@ a {
   padding-bottom: 200px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  max-width: 100%;
+  min-width: 100%;
   margin-left: auto;
   margin-right: auto;
   background-size: cover;
@@ -543,19 +542,19 @@ a {
 
 @media screen and (mim-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
   }
   .hero-section {
+    width: 100%;
     background-color: #2f303a;
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
@@ -643,7 +642,7 @@ a {
 }
 
 .container {
-  max-width: 480px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -716,7 +715,7 @@ br {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -940,7 +939,7 @@ br {
 }
 
 .container {
-  max-width: 480px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -1066,7 +1065,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -1277,7 +1276,7 @@ img {
 }
 
 .container {
-  max-width: 480px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -1376,7 +1375,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 768px;
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;

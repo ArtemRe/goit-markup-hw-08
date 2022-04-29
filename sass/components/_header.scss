@@ -91,7 +91,7 @@
 // }
 // mobile 
 .container {
-    max-width: 480px;
+    width: 480px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -244,7 +244,7 @@ color: #2196F3;
 
 @media screen and(min-width: 768px) {
 .container {
-    max-width: 768px;
+    width: 768px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto
@@ -293,7 +293,7 @@ color: #2196F3;
    padding-top: 21px;
    padding-bottom: 21px;
     display: block;
-    margin-left: auto;
+    // margin-left: auto;
 }
 
 & a {
