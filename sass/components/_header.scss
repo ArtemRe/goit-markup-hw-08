@@ -80,8 +80,8 @@ align-items: stretch;
     font-weight: 700;
     font-size: 24px;
     line-height: 1.2;
-    // margin-right: auto;
-    // margin-left: 15px;
+text-decoration: none;
+color: $tittle-colore;
     margin: 0;
 }
 .modal-menu{
@@ -105,13 +105,13 @@ transform: translateX(0);
 .modal-nav{
     
 }
-.modal-nav__item{
+.nav__items{
     margin-bottom: 32px;
     display: block;
  
 
 }
-.modal-nav__link{
+.link{
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -279,6 +279,8 @@ padding: 0;
     font-weight: bold;
     font-size: 26px;
     margin-right: 88px;
+    text-decoration: none;
+    color: $tittle-colore;
     
 }
 
@@ -405,6 +407,8 @@ padding: 0;
     font-weight: bold;
     font-size: 26px;
     margin-right: 93px;
+    text-decoration: none;
+    color: $tittle-colore;
 }
 
 .span {
