@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and(max-width:767px) {
+@media screen and (min-width: 320px) and(max-width: 767px) {
     
 .footer-container {
     min-width: 320px;
@@ -203,7 +203,7 @@
     margin-left: 10px;
 }}
 
-@media screen and(min-width: 768px) and(max-width:1199px){   
+@media screen and(min-width: 768px) and(max-width: 1199px){   
     .footer-container {
         width: 100%;
         display: block;
@@ -228,8 +228,9 @@
     }
     .footer-flex{
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         margin-bottom: 60px;
+        align-items: baseline;
     }
     .link {
         text-decoration: none;
@@ -380,11 +381,11 @@
         display: block;
         // justify-content: center;
         // align-items: center;
-        width: 100%;
+        // width: 100%;
     }
     
     .footer__input {
-        max-width: 450px;
+        width: 450px;
         height: 50px;
         border: 1px solid rgba(255, 255, 255, 0.3);
         box-sizing: border-box;

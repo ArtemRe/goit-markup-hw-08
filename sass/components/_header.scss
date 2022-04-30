@@ -18,17 +18,27 @@ a{
 
 
 }
+.mobile-button:focus .menu-cloze {
+    fill: #2196F3;
+}
+.mobile-button:focus .menu-open {
+    fill: #2196F3;
+}
 .menu{
 width: 40px;
 height: 40px;
+
+
 }
 .menu-cloze{
 opacity: 0;
 display: block;
 margin-top: 21px;
+transition: $speed-animation;
 }
 .menu-open{
     opacity: 1;
+    transition: fill $speed-animation, opacity $speed-animation;
 }
 .mobile-button.is-active .menu-open {
 opacity: 0;
