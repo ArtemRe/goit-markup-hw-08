@@ -16,32 +16,39 @@
 </head>
 
 <body>
-    <header class="header header-border">
-        <div class="container header-container">
-            <nav class="header-container"> <a href="./index.html" class="logo link">
-                    <span class="span"> Web</span>Studio</a>
-    
-                <ul class="nav-header">
-                    <li class="nav__items"><a href="./index.html" class=" link">Студия</a> </li>
-                    <li class="nav__items"><a href="./portfolio.html" class="current link">Портфолио</a> </li>
-                    <li class="nav__items"><a href="" class="link">Контакты</a> </li>
-    
-                </ul>
-            </nav>
-            <ul class="contakts">
-                <li class="contakts__mail"><a class="contacts__link link" href="mailto:info@example.com">
-                        <svg class="contakt__icon">
-                            <use href="./images/icons.svg#icon-mail"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li class="contakts__mail"><a class="contacts__link link" href="tel:+380991111111">
-                        <svg class="contakt__icon">
-                            <use href="./images/icons.svg#icon-Vector"></use>
-                        </svg>
-                        +38 099 111 11 11</a></li>
+<header class="header header-border">
+    <div class=" header-container">
+        <nav class="header-nav">
+            <a href="./index.html" class="logo link">
+                <span class="span"> Web</span>Studio</a>
+            <button type="button" class="mobile-button" data-menu-button aria-expanded="false">
+                <svg class="menu">
+                    <use href="./images/symbol-defss.svg#icon-menu" class="menu-open"></use>
+                    <use href="./images/symbol-defss.svg#icon-close_menu" class="menu-cloze"></use>
+                </svg>
+            </button>
+
+            <ul class="nav-header">
+                <li class="nav__items"><a href="./index.html" class="current link">Студия</a> </li>
+                <li class="nav__items"><a href="./portfolio.html" class="link">Портфолио</a> </li>
+                <li class="nav__items"><a href="" class="link">Контакты</a> </li>
+
             </ul>
-        </div>
-    </header>
+        </nav>
+        <ul class="contakts">
+            <li class="contakts__mail"><a class="contacts__link link" href="mailto:info@example.com">
+                    <svg class="contakt__icon">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                    </svg>
+                    info@devstudio.com</a></li>
+            <li class="contakts__mail"><a class="contacts__link link" href="tel:+380991111111">
+                    <svg class="contakt__icon">
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
+                    +38 099 111 11 11</a></li>
+        </ul>
+    </div>
+</header>
     <main>
         <section class="section section-portfolio">
             <div class="container">

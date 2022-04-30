@@ -3,7 +3,8 @@
     min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 .conteiner-company{
 width: 480px;
 padding-left: 15px;
@@ -36,11 +37,11 @@ margin: 0 auto;}
     fill: $icon-color;
 }
 
-.container-client {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// .container-client {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
 .section-clients {
     padding-top: 60px;
@@ -76,12 +77,13 @@ margin: 0 auto;}
     width: 106px;
     height: 60px;
 }
-@media screen and(min-width: 768px){
+@media screen and(min-width: 768px) and(max-width: 1199px){
 .container {
     width: 768px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0 auto;}
+    margin: 0 auto;
+}
 
     .conteiner-company {
     width: 768px;
@@ -117,16 +119,12 @@ margin: 0 auto;}
     fill: $icon-color;
 }
 
-.container-client {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// .container-client {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
 
-.section-clients {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .client__link {
     min-width: 170px;
@@ -159,23 +157,18 @@ margin: 0 auto;}
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and(min-width: 1200px) {
-.section-clients {
+.conteiner-company {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+    .section-clients {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .client__title {
     text-align: center;
     font-weight: 700;
@@ -185,21 +178,25 @@ margin: 0 auto;}
 }
 .container-client {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
 }
+
 .client {
     fill: $icon-color;
-&:not(:last-child) {
+
+}
+.container-client.client:not(:last-child) {
     margin-right: 30px;
 }
 
-}
-.container-client {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+// .container-client {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+// }
+
 .section-clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -218,15 +215,22 @@ margin: 0 auto;}
     box-sizing: border-box;
     color: $icon-color;
     transition: border $speed-animation;
+
     &:hover,
     &:focus {
         fill: $main-blue;
         border: 1px solid $main-blue;
-}}
+    }
+}
+
 .client__item {
     transition: fill $speed-animation;
 }
+
 .client__item {
     width: 106px;
     height: 60px;
-}}
+}
+}
+
+
